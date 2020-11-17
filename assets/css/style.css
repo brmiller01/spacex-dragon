@@ -224,3 +224,10 @@ body.faqs article.odd{
 body.faqs{
   background-color:#B8C0D9;
 }
+body.faqs img.img{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+}
