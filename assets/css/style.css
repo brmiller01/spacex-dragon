@@ -22,23 +22,50 @@ header.homepage:before{
   bottom:0;
   left:0;
   right:0;
-  opacity:.5;
-  height:26em;
+  opacity:.7;
+  height:32em;
 }
-header h1.primary{
+header h1.primary {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+header h1.primary a {
   color: #ffffff;
   background-image: url("https://assets.codepen.io/7248/logo-2.png");
   display: block;
   width: 450px;
   height: 70px;
   margin: 0 auto;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+figure.spacex{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+figure.spacex img{
+  width:800px;
+  height:150px;
+}
+figure.dragon{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+figure.dragon img{
+  width:400px;
+  height:200px;
 }
 header h1.secondary{
   font-size:3em;
   text-align:center;
+  text-decoration:none;
+}
+body.history{
+  background-color:#6A9AD9;
 }
 section.primary{
   padding:4em;
@@ -100,6 +127,8 @@ h2.table{
 }
 body{
   font-family: 'Arvo', serif;
+}
+section.primary{
   background-color:rgba(28,97,140,.8);
 }
 header.history::before{
@@ -126,4 +155,72 @@ img{
 figcaption{
   color:darkgray;
   text-align:center;
+}
+article.homepage ul{
+  list-style-type:none;
+}
+article.homepage ul li{
+  margin:10px 0px;
+}
+article.homepage{
+  border-style:solid;
+  border-radius:25px;
+  background-color:grey;
+}
+div.article{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2em;
+}
+article.homepage img{
+  width:350px;
+  height:350px;
+}
+figcaption{
+  color:white;
+}
+footer nav ul{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+footer nav li{
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+footer nav a:link,
+footer nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(40, 48, 64, 0.5);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+footer nav a:hover,
+footer nav a:active {
+  background-color: rgba(40, 48, 64, 0.9);
+}
+body.faqs article{
+  border:solid black;
+  margin:3em 2em;
+  border-radius:25px;
+}
+body.faqs article.even{
+  background-color:rgba(40,48,64,.3);
+}
+body.faqs article.odd{
+  background-color:rgba(40,48,64,.6);
+}
+body.faqs{
+  background-color:#B8C0D9;
 }
